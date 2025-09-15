@@ -4,30 +4,51 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Platformsify - Empower Your Digital Presence</title>
+        <title>Platformsify - Build Smarter</title>
         <meta name="description" content="Your platform for scalable tools and growth" />
       </Head>
 
-      <main style={{ padding: '2rem' }}>
-        <h1>🚀 Welcome to Platformsify!</h1>
-        <p>
-          Platformsify is your launchpad for fast, scalable, modern web platforms.
-          Whether you're building a startup MVP, a business landing page, or internal tools —
-          Platformsify gives you the tools to succeed.
-        </p>
+      <main className="min-h-screen bg-white text-gray-800 px-6 py-12">
+        <section className="text-center max-w-3xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">🚀 Welcome to Platformsify</h1>
+          <p className="text-lg md:text-xl mb-6">
+            A modern web toolkit powered by Next.js — made to help you launch, scale, and grow your platform.
+          </p>
+          <a
+            href="/contact"
+            className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-blue-700 transition"
+          >
+            Get Started
+          </a>
+        </section>
 
-        <h2>🔧 Features</h2>
-        <ul>
-          <li>⚡ Next.js 15 for blazing performance</li>
-          <li>🎨 Responsive UI with optional Tailwind CSS</li>
-          <li>📡 Built-in API routes (Node.js)</li>
-          <li>🚀 Deployed with Vercel</li>
-          <li>🔄 Ready for CI/CD (GitHub actions - coming soon)</li>
-        </ul>
+        <section className="mt-16 max-w-4xl mx-auto">
+          <h2 className="text-2xl font-semibold mb-4 text-center">🔧 Features</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="p-6 border rounded-lg shadow-sm">
+              <h3 className="font-bold text-lg">⚡ Next.js 15</h3>
+              <p>Fast, flexible, and optimized for modern apps.</p>
+            </div>
+            <div className="p-6 border rounded-lg shadow-sm">
+              <h3 className="font-bold text-lg">🎨 Tailwind CSS</h3>
+              <p>Style quickly with utility-first classes.</p>
+            </div>
+            <div className="p-6 border rounded-lg shadow-sm">
+              <h3 className="font-bold text-lg">📡 API Routes</h3>
+              <p>Serverless backend capabilities with Node.js.</p>
+            </div>
+            <div className="p-6 border rounded-lg shadow-sm">
+              <h3 className="font-bold text-lg">🚀 Deployed on Vercel</h3>
+              <p>Blazing fast global deployments with 1 command.</p>
+            </div>
+          </div>
+        </section>
 
-        <p>
-          👉 Explore the <a href="/about">About</a>, <a href="/services">Services</a>, and <a href="/contact">Contact</a> pages.
-        </p>
+        <section className="mt-16 text-center">
+          <p className="text-gray-600">
+            Learn more: <a href="/about" className="text-blue-600 hover:underline">About</a> | <a href="/services" className="text-blue-600 hover:underline">Services</a> | <a href="/contact" className="text-blue-600 hover:underline">Contact</a>
+          </p>
+        </section>
       </main>
     </>
   );
