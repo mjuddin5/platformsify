@@ -1,20 +1,34 @@
-# Platformsify
+# 🚀 Platformsify
 
-**Platformsify** is a modern web platform designed to unify business tools, marketing, and services.
+**Platformsify** is a modern, scalable platform for powering business tools, marketing, and infrastructure — built with performance and simplicity in mind.
 
-## 🚀 Features
+## 🌐 Live Demo
+👉 [https://platformsify-nxy5pf9gs-meheraj-uddins-projects.vercel.app](https://platformsify-nxy5pf9gs-meheraj-uddins-projects.vercel.app)
 
-- AI-powered support
-- Modular micro-app structure
-- Serverless architecture with Next.js
-- Deployed on Vercel
+---
 
-## 📦 Technologies
+## 🧰 Tech Stack
 
-- Next.js 15
-- Tailwind CSS
-- React 18
-- Vercel Deployment
-- API routes for contact handling
+- ✅ **Next.js 15**
+- ✅ **React**
+- ✅ **Vercel** (Deployment)
+- ✅ **CSS Modules / Tailwind** (Optional)
+- ✅ **Node.js API Routes**
+- ✅ **GitHub CI/CD (Coming soon)**
 
-## 📁 Folder Structure
+---
+
+## 🛠️ Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Deploy to Vercel
+vercel --prod
