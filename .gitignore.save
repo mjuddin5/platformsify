@@ -1,0 +1,62 @@
+# Node modules
+node_modules/
+
+# Production builds
+.next/
+dist/
+
+# Vercel
+.vercel/
+
+# Logs
+*.log
+
+# Env variables
+.env
+.env.local
+.env.*.local
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# pnpm
+pnpm-lock.yaml# Node modules
+node_modules/
+
+# Production builds
+.next/
+dist/
+
+# Vercel
+.vercel/
+
+# Logs
+*.log
+
+# Env variables
+.env
+.env.local
+.env.*.local
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# pnpm
+pnpm-lock.yamlode_modules
+.next
+.turbo
+pnpm-lock.yaml
+dist
+.env.local
+node_modules
+.vercel
