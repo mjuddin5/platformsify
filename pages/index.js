@@ -1,32 +1,42 @@
-import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <main className="bg-white min-h-screen flex flex-col items-center justify-center text-center px-6 py-20">
-        <h1 className="text-5xl font-extrabold text-gray-900 mb-4">
-          🚀 Welcome to Platformsify
-        </h1>
-        <p className="text-lg text-gray-700 max-w-2xl mb-6">
-          A modern web platform kit built for visionaries. Scale faster, launch smarter, and grow your brand with confidence.
+      <Head>
+        <title>Platformsify – Build Smarter, Launch Faster</title>
+        <meta name="description" content="Launch your platform with confidence using Platformsify's modern toolkit. Scalable, fast, and beautifully designed." />
+        <meta property="og:title" content="Platformsify – Build Smarter" />
+        <meta property="og:description" content="Modern web platform kit for startups and builders." />
+        <meta property="og:image" content="https://platformsify.vercel.app/og-image.png" />
+        <meta property="og:url" content="https://platformsify.vercel.app" />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
+
+      <main className="text-center p-10">
+        <h1 className="text-4xl font-bold mb-4">🚀 Platformsify</h1>
+        <p className="mb-2 text-lg">Build, scale, and launch your platform with ease.</p>
+        <p className="mb-4">
+          Visit our live demo:{' '}
+          <a
+            href="https://platformsify.vercel.app"
+            className="text-blue-600 underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            platformsify.vercel.app
+          </a>
         </p>
-
-        <a
-          href="https://platformsify.vercel.app"
-          className="bg-blue-600 text-white px-6 py-3 rounded-lg text-md font-semibold shadow-md hover:bg-blue-700 transition"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit Live Demo
-        </a>
-
-        <div className="mt-16 text-sm text-gray-500">
-          Built with ❤️ by <strong>Meheraj Uddin</strong> — Founder & CEO
+        <div className="bg-gray-100 p-6 rounded-lg shadow mt-10 max-w-xl mx-auto">
+          <h2 className="text-2xl font-semibold mb-3">Why Choose Platformsify?</h2>
+          <ul className="text-left list-disc list-inside space-y-2">
+            <li>⚡ Lightning-fast performance</li>
+            <li>📱 Fully responsive and mobile-ready</li>
+            <li>🛠 Built with modern Next.js architecture</li>
+            <li>💼 Perfect for startups, agencies, and indie hackers</li>
+          </ul>
         </div>
       </main>
-      <Footer />
     </>
   );
 }
