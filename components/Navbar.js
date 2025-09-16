@@ -1,10 +1,15 @@
+// components/Navbar.js
+import Link from 'next/link';
+
 export default function Navbar() {
   return (
-    <nav style={{ padding: '1rem', background: '#f5f5f5', borderBottom: '1px solid #ccc' }}>
-      <a href="/" style={{ marginRight: '1rem' }}>Home</a>
-      <a href="/about" style={{ marginRight: '1rem' }}>About</a>
-      <a href="/services" style={{ marginRight: '1rem' }}>Services</a>
-      <a href="/contact">Contact</a>
+    <nav className="bg-gray-100 p-4 shadow">
+      <ul className="flex justify-center space-x-6">
+        <li><Link href="/">Home</Link></li>
+        <li><Link href="/about">About</Link></li>
+        <li><Link href="/services">Services</Link></li>
+        <li><Link href="/contact">Contact</Link></li>
+      </ul>
     </nav>
   );
 }
