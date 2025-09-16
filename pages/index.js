@@ -9,7 +9,6 @@ export default function Home() {
       </Head>
 
       <main className="text-center px-6 py-12 bg-gray-50 min-h-screen">
-        {/* Hero Section */}
         <section className="mb-16">
           <h1 className="text-5xl font-extrabold mb-4">🚀 Welcome to Platformsify</h1>
           <p className="text-lg mb-6 text-gray-600">
@@ -24,7 +23,6 @@ export default function Home() {
           </a>
         </section>
 
-        {/* Features Section */}
         <section className="grid md:grid-cols-3 gap-8 text-left max-w-5xl mx-auto">
           <div className="bg-white p-6 shadow-lg rounded-lg">
             <h2 className="text-xl font-semibold mb-2">⚙️ Modular Architecture</h2>

@@ -1,35 +1,50 @@
 import { useState } from 'react';
 
 export default function Contact() {
-  const [status, setStatus] = useState('');
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const form = new FormData(e.target);
-    const data = Object.fromEntries(form);
-
-    const res = await fetch('/api/contact', {
+    await fetch('/api/contact', {
       method: 'POST',
-      body: JSON.stringify(data),
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
     });
-
-    if (res.ok) {
-      setStatus('✅ Message sent!');
-    } else {
-      setStatus('❌ Failed to send. Try again.');
-    }
+    alert('Message sent!');
+    setForm({ name: '', email: '', message: '' });
   };
 
   return (
-    <main style={{ padding: '2rem' }}>
-      <h1>Contact Us</h1>
-      <form onSubmit={handleSubmit}>
-        <input name="name" placeholder="Your name" required /><br />
-        <input name="email" type="email" placeholder="Your email" required /><br />
-        <textarea name="message" placeholder="Your message" required /><br />
-        <button type="submit">Send</button>
+    <div className="px-6 py-12 max-w-xl mx-auto">
+      <h1 className="text-4xl font-bold mb-6">Contact Us</h1>
+      <form onSubmit={handleSubmit} className="space-y-4">
+        <input
+          type="text"
+          placeholder="Name"
+          value={form.name}
+          onChange={(e) => setForm({ ...form, name: e.target.value })}
+          className="w-full border p-2 rounded"
+          required
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          value={form.email}
+          onChange={(e) => setForm({ ...form, email: e.target.value })}
+          className="w-full border p-2 rounded"
+          required
+        />
+        <textarea
+          placeholder="Message"
+          value={form.message}
+          onChange={(e) => setForm({ ...form, message: e.target.value })}
+          className="w-full border p-2 rounded"
+          required
+        />
+        <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+          Send
+        </button>
       </form>
-      <p>{status}</p>
-    </main>
+    </div>
   );
 }

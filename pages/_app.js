@@ -1,9 +1,8 @@
-// pages/_app.js
 import '../styles/globals.css';
-import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
-export default function App({ Component, pageProps }) {
+function MyApp({ Component, pageProps }) {
   return (
     <>
       <Navbar />
@@ -12,3 +11,5 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+export default MyApp;

@@ -1,10 +1,12 @@
 export default function About() {
   return (
-    <div style={{ padding: '2rem' }}>
-      <h1>About Platformsify</h1>
+    <div className="px-6 py-12 max-w-3xl mx-auto text-gray-800">
+      <h1 className="text-4xl font-bold mb-6">About Platformsify</h1>
+      <p className="mb-4">
+        Platformsify is a modern development starter kit built with Next.js and Tailwind CSS. It's designed to help startups, creators, and developers rapidly launch platform-based products.
+      </p>
       <p>
-        Platformsify is a modern platform designed to unify your business tools, marketing, and services.
-        Built with scalability and simplicity in mind, our mission is to make launching your brand or product easier than ever.
+        Our goal is to simplify the tech stack while giving you maximum flexibility to build fast, iterate often, and scale confidently.
       </p>
     </div>
   );
