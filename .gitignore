@@ -17,3 +17,10 @@ build/
 .local/
 node_modules/
 .next/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
